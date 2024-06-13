@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-# lib/debug.py
+# chatbot/debug.py
 
-from models.__init__ import CONN, CURSOR
-import ipdb
+def debug_message(message):
+    print(f"DEBUG: {message}")
 
-
-ipdb.set_trace()
+def log_error(error):
+    with open('error.log', 'a') as f:
+        f.write(f"ERROR: {error}\n")

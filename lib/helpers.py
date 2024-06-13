@@ -1,9 +1,9 @@
-# lib/helpers.py
 
-def helper_1():
-    print("Performing useful function#1.")
+# chatbot/helpers.py
 
+def format_task(task):
+    return f"{task.id}: {task.title} - {task.description}"
 
-def exit_program():
-    print("Goodbye!")
-    exit()
+def validate_input(input_data):
+    # Add input validation logic
+    pass

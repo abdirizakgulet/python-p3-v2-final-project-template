@@ -1,5 +1,3 @@
-# chatbot/commands.py
-
 import click
 from .models import Task
 
